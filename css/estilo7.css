@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	background-origin: border-box;
+}
+body{
+  	background-image: url(../img/21.jpg);
+  	background-attachment: fixed;
+  	background-size: cover; /ocupa la imagen toda la pantalla/
+	text-align: center; 
+	font-family: "Crimson Text", serif;
+  	font-weight: 400;
+  	font-style: italic;
+}
+.container{
+	width: 90%;
+	max-width: 1100px;
+	margin: auto;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.box{
+	width: 28%;
+	height: 550px;
+	margin: auto;
+	border: 1px solid #ffffff;
+	border-radius: 60px;
+	text-align: center;
+	flex-grow: 1;
+	color: #ffffff;
+	margin-right: 5%;
+}
+.box>h2{
+	font-size: 30px;
+	margin-bottom: 35px;
+	margin-top: 10px;
+}
+.box>img{
+	font-size: 30px;
+	margin-bottom: 35px;
+	height: 200px;
+}
+.box>h3{
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: red;
+}
+.box>span{
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: red;
+}
+.box>p{
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: black;
+}
+.box>a{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.container-cupon>img{
+	font-size: 30px;
+	margin-bottom: 35px;
+	width: 60%;
+	height: 150px;
+}
+h2{
+	margin-top: 30px;
+	display: inline-block;
+	position: relative;
+	font-size: 60px;
+	margin-left: 350px;
+	text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.20);
+}
+h2::after,h2::before{
+	content: '';
+	position: absolute;
+	width: 90px;
+	height: 6px;
+	background-color: currentColor;
+	top: 0.7em;
+	transform: scale(1.0);
+	transition: all 0.5s ease-in;
+}
+h2:hover::after,h2:hover::before{
+	transform: scale(0);
+}
+h2::after{
+	left: -100px;
+}
+h2::before{
+	right: -100px;
+}
+.box .boton{
+	display: inline-block;
+	padding: 15px 30px;
+	border: 1px solid #8b0000;
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	animation: efecto 2s linear infinite;
+	transition: 0.8s ease;
+}
+.box .boton:hover{
+	border: 1px solid #ffffff;
+	color: #8b0000;
+	animation: none;
+}
+@keyframes efecto{
+	0%, 42%, 46%, 50%, 100%{
+		opacity: 1;
+	}
+	43%, 45%, 47%, 48%, 50%{
+		opacity: 0;
+	} 
+}
+.btn{
+	display: inline-block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    margin-bottom: 10px; 
+}

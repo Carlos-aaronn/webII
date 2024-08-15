@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+	background-origin: border-box;
+	text-align: center;
+}
+.cupon img{
+	font-size: 50px;
+	margin-bottom: 20px;
+	width: 60%;
+	height: 300px;
+	margin-top: 50px;
+}
+.imprint h2{
+	text-align: center;
+	decoration: none;
+	font-family: 'PT Serif', serif;
+}
+
+a{
+	text-decoration: none;
+}
+.contenedor-boton h3{
+	text-align: center;
+	decoration: none;
+	font-family: 'PT Serif', serif;
+}
